@@ -63,7 +63,7 @@ group :development do
   # Guard
   gem 'guard', '~> 2.18', '>= 2.18.1'
   # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
-  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard-livereload', '~> 2.5', require: false
 end
 
 group :test do
@@ -84,3 +84,6 @@ gem "bulma-rails", "~> 1.0.0"
 
 # Simple Form
 gem 'simple_form', '~> 5.3', '>= 5.3.1'
+
+# Use Sass to process CSS
+gem "sassc-rails"
