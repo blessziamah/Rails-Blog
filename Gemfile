@@ -60,6 +60,10 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  # Guard
+  gem 'guard', '~> 2.18', '>= 2.18.1'
+  # Guard::LiveReload automatically reloads your browser when 'view' files are modified.
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
 end
 
 group :test do
@@ -67,3 +71,16 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+# Make errors better looking
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
+# Bulma CSS
+gem "bulma-rails", "~> 1.0.0"
+
+
+# Simple Form
+gem 'simple_form', '~> 5.3', '>= 5.3.1'
