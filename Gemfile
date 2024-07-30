@@ -87,3 +87,4 @@ gem 'simple_form', '~> 5.3', '>= 5.3.1'
 
 # Use Sass to process CSS
 gem "sassc-rails"
+gem "dartsass-rails", "~> 0.5.0"
